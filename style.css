@@ -4,21 +4,22 @@
     box-sizing: border-box;
 }
 header{
-    height: 60%;
+    height: 70%;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: large;
-    background-color: cadetblue;
-    border-radius: 0px 0px 20px 20px;
+    color: #7FCD73;
+    font-family: 'Lemon', serif;
 }
 .titulo{
     margin: 3%;
 }
 
 body{
-    background-color:rgb(51, 51, 51);
+   background-image: url(./image/fundo\ arredondado.png);
+   background-repeat: no-repeat;
+   background-size:380px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -28,18 +29,43 @@ body{
 
 }
 
+.info-inter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4em;
+    z-index: -1;
+}
 
+.info-inter p{
+    position: absolute;
+    color: #70B29A;
+    font-family: Literata;
+    font-size: 10px;
+    display: flex;
+    justify-content: center; 
+    width: 65%;
 
+}
 
-.ano{
-    margin-left: 70%;
-    font-size: 50px;
+.pergunta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    padding-top: 4.5em;
+    color: #6C90C0;
+    font-family: Literata;
+}
+.pergunta p{
+    position: absolute;
 }
 
 .seta{
-    font-size: 70px;
-    margin-left: 40%;
-    margin-top: 10%;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .conheca{

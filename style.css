@@ -18,7 +18,7 @@ header{
 
 body{
    background-image: url(./image/fundo\ arredondado.png);
-   background-repeat: no-repeat;
+   background-repeat: repeat;
    background-size:380px;
     height: 100%;
     width: 100%;
@@ -26,7 +26,6 @@ body{
     flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
-
 }
 
 .info-inter{
@@ -71,23 +70,28 @@ body{
 .conheca{
     align-items: center;
     margin: 10%;
-    font-size: 260%;
+    font-size: 160%;
 }
 
-.coutries {
+.countries {
     display: grid;
+    height: 40%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
     gap: 10px;
 }
 
-
-.oitoA, .oitoB, .noveA, .noveB {
+.countries div {
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction: row-reverse;
     display: flex;
+    height: 100%;
     font-size: 200%;
+    background-color: #BFDBFF;
+}
+.countries div img{
+    height: 70px;
 }
 
 .oitoB{
@@ -111,7 +115,7 @@ body{
 }
 .info_country{
     height: 70vh;
-    width: 80vw;
+    width:60%;
     background-color: aliceblue;
     margin: 2.2rem;
 
@@ -119,18 +123,13 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     height: 80vh;
-
 }
 
-.texto{
-    background-color: #E58D5C;
-}
-
-.image{
-    background-color: #B96F6F;
+.modalidades{
+    background-color: #6C90C0;
+    display: grid;
 }
 
 
@@ -140,5 +139,6 @@ footer {
     border-radius: 20px 20px 0px 0px;
     color: white;
     padding: 5%;
+    white-space: pre;
 }
 

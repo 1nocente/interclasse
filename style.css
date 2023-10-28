@@ -21,7 +21,7 @@ header{
     font-family: var(--titulo);
 }
 .titulo{
-    margin: 3%;
+    margin: 8%;
 }
 
 body{
@@ -34,6 +34,18 @@ body{
     flex-direction: column;
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.pagina-inicial{
+    height: 80vh;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    padding: 6vh 0 0 0;
+}
+.pagina-modalidades{
+    height: 80vh;
 }
 
 .info-inter{
@@ -74,12 +86,6 @@ body{
     flex-direction: row;
     justify-content: center;
 }
-
-.pagina-paises{
-    height: 100vh;
-    width: 100vw;
-    padding: 10vh 0;
-}
 .conheca{
     text-align: center;
     margin: 10%;
@@ -92,8 +98,9 @@ body{
     display: grid;
     height: 40%;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 10px;
+    grid-template-rows: 90px 90px;
+    row-gap: 20px;
+    column-gap: 10px;
 }
 .countries div {
     align-items: center;
@@ -124,7 +131,7 @@ body{
     gap: 8%;
     margin-top: 5%;
 } */
-.japao{
+/* .japao{
     height: 20vh;
 }
 
@@ -138,12 +145,13 @@ body{
 
 .spain{
     height: 19vh;
-}
+} */
+
 .info_country{
-    height: 70vh;
-    width:60%;
-    background-color: aliceblue;
-    margin: 2.2rem;
+    height: 40%;
+    width: 100%;
+    background-color: var(--azul);
+    margin: 0 2rem;
 }
 
 .container{

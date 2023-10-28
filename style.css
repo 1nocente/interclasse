@@ -1,3 +1,11 @@
+:root{
+    --azul: #BFDBFF;
+    --azulEscuro: #6C90C0;
+    --verde: #7FCD73;
+    --verdeAzul: #70B29A;
+    --titulo: 'Lemon', serif;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -9,8 +17,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #7FCD73;
-    font-family: 'Lemon', serif;
+    color: var(--verde);
+    font-family: var(--titulo);
 }
 .titulo{
     margin: 3%;
@@ -53,7 +61,7 @@ body{
     align-items: center;
     position: absolute;
     padding-top: 4.5em;
-    color: #6C90C0;
+    color: var(--azulEscuro);
     font-family: Literata;
 }
 .pergunta p{
@@ -67,12 +75,19 @@ body{
     justify-content: center;
 }
 
-.conheca{
-    align-items: center;
-    margin: 10%;
-    font-size: 160%;
+.pagina-paises{
+    height: 100vh;
+    width: 100vw;
+    padding: 10vh 0;
 }
-
+.conheca{
+    text-align: center;
+    margin: 10%;
+    font-size: 1.8rem;
+    font-family: var(--titulo);
+    color: var(--verde);
+    width: 100%;
+}
 .countries {
     display: grid;
     height: 40%;
@@ -80,24 +95,35 @@ body{
     grid-template-rows: auto auto;
     gap: 10px;
 }
-
 .countries div {
     align-items: center;
-    justify-content: center;
-    flex-direction: row-reverse;
+    justify-content: space-around;
     display: flex;
     height: 100%;
     font-size: 200%;
-    background-color: #BFDBFF;
+    background-color: var(--azul);
+    color: var(--verdeAzul);
+    font-family: var(--titulo);
 }
 .countries div img{
     height: 70px;
 }
-
-.oitoB{
+.oitoA, .noveA{
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.oitoB, .noveB{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+/* .oitoB{
     gap: 8%;
     margin-top: 5%;
-}
+} */
 .japao{
     height: 20vh;
 }
@@ -118,7 +144,6 @@ body{
     width:60%;
     background-color: aliceblue;
     margin: 2.2rem;
-
 }
 
 .container{
@@ -128,14 +153,14 @@ body{
 }
 
 .modalidades{
-    background-color: #6C90C0;
+    background-color: var(--azulEscuro);
     display: grid;
 }
 
 
 footer {
     text-align: center;
-    background-color: cadetblue;
+    background-color: var(--azul);
     border-radius: 20px 20px 0px 0px;
     color: white;
     padding: 5%;

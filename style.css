@@ -134,7 +134,7 @@ body{
 }
 
 .info_country{
-    height: 54%;
+    height: 60%;
     width: 90%;
     background-color: var(--azul);
     margin: 18px;
@@ -176,10 +176,12 @@ body{
 .container h3{
     font-family: var(--titulo);
     color: var(--verde);
+    margin-top: 20%;
 }
 .modalidades{
     background-color: var(--azulEscuro);
     display: grid;
+    
 }
 
 
@@ -192,3 +194,15 @@ footer {
     white-space: pre;
 }
 
+@keyframes increaseSize {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  

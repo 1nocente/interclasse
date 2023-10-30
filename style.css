@@ -55,9 +55,6 @@ background: none;
     padding-top: 4em;
     z-index: -1;
 }
-.info-inter img{
-    width: 280px;
-}
 .info-inter p{
     position: absolute;
     color: #70B29A;

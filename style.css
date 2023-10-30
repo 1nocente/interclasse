@@ -44,6 +44,10 @@ body{
     height: 80vh;
     padding: 0;
 }
+/* tirar o gradiente preto do vídeo */
+video::-webkit-media-controls-panel{
+background: none;
+}
 .info-inter{
     display: flex;
     justify-content: center;
@@ -51,7 +55,9 @@ body{
     padding-top: 4em;
     z-index: -1;
 }
-
+.info-inter img{
+    width: 280px;
+}
 .info-inter p{
     position: absolute;
     color: #70B29A;
@@ -62,7 +68,7 @@ body{
     width: 65%;
 
 }
-
+s
 .pergunta{
     display: flex;
     justify-content: center;
@@ -101,7 +107,7 @@ body{
 }
 .countries {
     display: grid;
-    height: 36%;
+    height: 34%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 90px 90px;
     row-gap: 20px;
@@ -121,16 +127,10 @@ body{
     height: 70px;
 }
 .oitoA, .noveA{
-    border-top-left-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-radius: 0 20px 20px 0;
 }
 .oitoB, .noveB{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
+    border-radius: 20px 0 0 20px;
 }
 
 .info_country{
@@ -163,7 +163,7 @@ body{
     height: 100%;
     border-radius: 10px;
     padding: 8px;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 /* ---------- */
@@ -179,6 +179,7 @@ body{
     font-family: var(--titulo);
     color: var(--verde);
     margin-top: 20%;
+    margin-bottom: 4px;
     text-align: center;
     background-color: var(--azul);
     padding: 2px 6px;

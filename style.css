@@ -241,6 +241,7 @@ footer {
     color: var(--verdeAzul);
     padding: 5%;
     white-space: pre;
+    margin-top: 5%;
 }
 
 @keyframes increaseSize {
@@ -259,3 +260,12 @@ footer {
 
   }
   
+  .regras{
+    display: flexbox;
+    background-color: var(--verdeAzul);
+    height: 55%;
+    margin-top: 20vh;
+    padding: 5%;
+
+    
+  }

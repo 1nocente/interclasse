@@ -74,7 +74,7 @@ const addAnimation = (element) => {
     //   cont = 0
 
     cont++
-    if(cont>2)
+    if(cont>6)
     cont = 0
 
     modalidades.forEach((modalidade) =>{
@@ -84,3 +84,41 @@ const addAnimation = (element) => {
   }
 
   button.addEventListener('click', slideNext)
+
+  const regrasDiv = document.getElementById("regras");
+const slideButton = document.getElementById("slide");
+
+// Array de textos para as diferentes imagens
+const textos = [
+  "Jogo de equipes de 6 jogadores<br>Objetivo é marcar pontos fazendo a bola tocar o chão adversário<br>Saque inicia o jogo, passando a rede<br>Equipe tem até 3 toques para passar a bola ao campo adversário<br>Bloqueio é permitido na defesa<br>Rodízio obrigatório dos jogadores<br>vencendo com vantagem de 2 pontos<br>",
+  "Jogo de equipes de 5 jofadores<br>Objetivo é marcar gols no time adversário e evitar que eles marquem gols<br>Inicia com um saque no centro da quadra<br>Cada equipe tem 5 jogadores, incluindo um goleiro<br>Faltas resultam em lances livres ou tiros diretos<br>Partida dividida em dois tempos de 20 minutos<br>Vence quem marcar mais gols no tempo regulamentar<br>",
+  "2 jogadores<br>Marcar pontos tocando a mesa no campo adversário<br>Saque tocando ambos lados da mesa<br>Ponto quando o oponente não devolve corretamente<br>Bola acima da mesa e abaixo da cintura<br>Vitória com vantagem de 2 pontos.",
+  "Jogo de equipe com frisbee<br>Pontuação ao pegar o frisbee na end zone adversária<br>Começa com um lançamento (pull)<br>Passe entre jogadores até a end zone adversária<br>Ponto marcado ao pegar o frisbee na end zone<br>Troca de posse após interceptação ou queda do frisbee<br>Sem contato físico permitido<br>Pontuação normalmente até 15 ou 17 pontos<br>",
+  "Equipes de corredores passam um bastão<br>Objetivo é completar a corrida no menor tempo<br>Cada corredor percorre uma parte da distância total<br>Passagem do bastão em zonas específicas (geralmente 20 metros)<br>Velocidade nas trocas é crucial<br>Comum em provas de pista e campo<br>Diferentes distâncias e número de corredores<br>",
+  "Lançamento de uma esfera de peso<br>Objetivo é lançar a esfera o mais longe possível<br>Área de lançamento é um círculo<br>Lançador não pode sair do círculo<br>Peso da esfera varia por categoria<br>Vence quem lançar a maior distância<br>Comum em competições de atletismo<br>",
+  "Jogo de tabuleiro estratégico<br>Objetivo é dar xeque-mate ao rei adversário<br>Cada jogador tem 16 peças com movimentos específicos<br>Rei é a peça central e crucial<br>Partidas podem terminar em xeque-mate, empate ou empate por acordo<br>Jogadas estratégicas e táticas são fundamentais<br>Xadrez é um esporte mental e de estratégia."
+  // Adicione textos para todas as imagens que você tem.
+];
+
+// Variável para rastrear o índice atual do texto
+let currentIndex = 0;
+
+// Função para atualizar o texto
+function updateTexto() {
+  regrasDiv.innerHTML = textos[currentIndex];
+}
+
+// Função para avançar para o próximo texto
+function nextTexto() {
+  currentIndex++;
+  if (currentIndex >= textos.length) {
+    currentIndex = 0; // Volte ao início se estiver no final.
+  }
+  updateTexto();
+}
+
+// Adicionar um ouvinte de evento ao botão "slide" para avançar o texto
+slideButton.addEventListener("click", nextTexto);
+
+// Chamar a função inicialmente para exibir o primeiro texto
+updateTexto();

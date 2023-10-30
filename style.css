@@ -163,7 +163,7 @@ body{
     height: 100%;
     border-radius: 10px;
     padding: 8px;
-
+    font-size: 13px;
 }
 
 /* ---------- */
@@ -172,16 +172,65 @@ body{
 }
 .container{
     height: 20vh;
+    display: grid;
+    place-content: start center;
 }
 .container h3{
     font-family: var(--titulo);
     color: var(--verde);
     margin-top: 20%;
+    text-align: center;
+    background-color: var(--azul);
+    padding: 2px 6px;
+    border-radius: 30px;
+}
+.slide{
+    position: absolute;
+    place-self: end;
+    right: 8vw;
+    transform: translateY(120px);
+    padding: 4px;
+    background-color: var(--verdeAzul);
+    border: solid 1px var(--verdeAzul);
+    font-size: 20px;
+    color: white;
 }
 .modalidades{
+    display: flex;
+    width: 100vw;
+    padding: 0 10px;
+    gap: 10%;
+    overflow-x: hidden;
+    /* scroll-snap-type: mandatory; */
+    /* scroll-snap-align: left; */
+    height: 26vh;
+    width: 70vw;
+    justify-content: start;
+}
+.modalidades::-webkit-scrollbar{
+        display: none;
+}
+.modalidade{
+    height: 100%;
     background-color: var(--azulEscuro);
-    display: grid;
-    
+    width: 100%;
+    border-radius: 10px;
+    transition: 1s;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.modalidade img{
+    height: 100%;
+}
+.modalidade span{
+    position: relative;
+    background-color: var(--verdeAzul);
+    width: 100%;
+    display: block;
+    padding: 0 10px;
+    bottom: 16%;
+    font-family: var(--titulo);
+    color: white;
 }
 
 
@@ -204,5 +253,9 @@ footer {
     100% {
       transform: scale(1);
     }
+  }
+
+  @keyframes slide{
+
   }
   
